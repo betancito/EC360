@@ -1,0 +1,12 @@
+.navbar{
+    background-image: linear-gradient(to bottom, #0C27A6,#000000 );
+
+}
+
+.navbar img{
+    width: 200px;
+}
+
+.navbar a{
+    color: white;
+}
