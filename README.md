@@ -1,0 +1,7 @@
+“EC360 (Easy Capital)” nace de unos jovenes cuyo objetivo es conseguir que las personas puedan ser mas conscientes a la hora de gestionar sus finanzas y gastar su dinero. Nacemos para ser esa opción de confianza en la cual podrás mejorar tu vida financiera y tener una vida mas prospera. En EC360, reconocemos la urgencia de abordar un desafío persistente en la sociedad: la cultura del ahorro. A menudo relegada a un segundo plano, esta falta de una sólida cultura de ahorro ha llevado a muchos a enfrentar constantes dificultades económicas, privándoles del poder sobre sus propias vidas y sumiéndose en un ciclo de frustración e infelicidad. Nuestra misión en EC360 es catalizar un cambio transformador, fomentando la responsabilidad económica. Nos esforzamos por empoderar a las personas para que tomen las riendas de su economía personal, desbloqueando así el camino hacia una vida plena y auténtica.
+
+Link documento trabajo escrito: https://docs.google.com/document/d/1dxbCU-BxGpPIlVLxu2Ht5tdHRFC7jeLS93mACEzLKZo/edit?pli=1
+Link Figma: https://www.figma.com/design/iyJeQ0uQxL1RhV13H7sfIX/EC360-PROJECT?node-id=7-46&t=Y4ga7PdNQXkOJSh6-0
+Link Asana: https://app.asana.com/0/1207290973987215/1207290937976763
+Link Paleta de colores: https://coolors.co/faf9ff-0c27a6-0d28ab-dee5f6-f7f8f7-6aa9dc
+Link fuentes de letras: https://fonts.google.com/specimen/Poetsen+One
