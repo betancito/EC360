@@ -19,16 +19,47 @@ body {
 }
 
 .navbar {
-
-    background-image: linear-gradient(45deg, #0D28AB, #A0AFF8, #0C27A6, #A0AFF8);
-    animation: animated 5ms ease-in-out infinite;
+    animation: animated 30s infinite ;
     align-items: center;
-}
-@keyframes animated{
-    0% {background-position: 0% 50%;}
-    50%{background-position: 100% 50%;}
-    100% {background-position: 0% 50%}
-}
+    background-image: linear-gradient(to right, #0D28AB, #415FF1, #B3BFF9, #0D28AB, #415FF1, #B3BFF9);
+    background-size: 1000% 100%;
+  }
+  
+  @keyframes animated {
+    0% {
+      background-position: 0% 0%;
+    }
+    10% {
+      background-position: 10% 0%;
+    }
+    20% {
+      background-position: 20% 0%;
+    }
+    30% {
+      background-position: 30% 0%;
+    }
+    40% {
+      background-position: 40% 0%;
+    }
+    50% {
+      background-position: 50% 0%;
+    }
+    60% {
+      background-position: 60% 0%;
+    }
+    70% {
+      background-position: 70% 0%;
+    }
+    80% {
+      background-position: 80% 0%;
+    }
+    90% {
+      background-position: 90% 0%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
 .logoPagina {
     width: 20%;
     height: 100%;
