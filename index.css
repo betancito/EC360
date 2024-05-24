@@ -9,7 +9,9 @@ HACER MEDIA QUERY A LOS 1200PX DE WIDTH
     font-weight: 400;
     font-style: normal;
 }
-
+.favicon link{
+  filter: invert(1);
+}
 body {
     background-color: #ffffff;
 }
@@ -20,7 +22,7 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
-    background-image: linear-gradient(to right, #0D28AB, #415FF1, #B3BFF9, #0D28AB, #415FF1, #B3BFF9);
+    background-image: linear-gradient(to right, #0d28ab, #415FF1, #B3BFF9, #0D28AB, #415FF1, #B3BFF9);
     background-size: 1000% 100%;
     height: 100px;
   }
@@ -186,11 +188,117 @@ body {
 .launch button:hover {
   box-shadow: 0 0 0 5px #2195f360;
   color: #ffffff;
-  background-color: #0D28AB;
+  background-color: #091c7c;
 }
 
 .launch button:active {
   scale: 0.95;
 }
 /* Launch button styles */
+/* Main styles */
+main{
+  display: flex;
+  justify-content: center;
+}
+.wrapper-main{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+}
+.main-left{
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  gap: 40px;
+  width: 50%;
+}
+.main-left p{
+  font-weight: lighter;
+}
 
+.main-right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  padding: 50px;
+}
+
+.main-right img{
+  width: 70%;
+  border-radius: 20px;
+
+}
+/* Main styles */
+
+/* Main-left buttons */
+.buttons-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.button{
+  padding: 15px;
+  border: transparent;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #DEE5F6;
+  border: none;
+  justify-content: center;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.button-launch{
+  padding: 15px;
+  border: transparent;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  background-color: #DEE5F6;
+  border: none;
+  justify-content: center;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.button a{
+  text-decoration: none;
+  color: #000;
+}
+
+.button-launch a{
+  text-decoration: none;
+  color: #6AA9DC;
+}
+
+.button-launch:hover {
+  background-color: #0D28AB;
+  box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.048);
+  color: #fff;
+  transform: translateY(-7px);
+}
+.button-launch:active {
+  transform: translateY(-1px);
+}
+
+.button:hover {
+  background-color: #6AA9DC;
+  box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.048);
+  color: #fff;
+  transform: translateY(-7px);
+}
+.button:active {
+  transform: translateY(-1px);
+}
+/* Main button */
