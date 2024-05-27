@@ -26,9 +26,9 @@ body {
     gap: 1100px;
 }
 
-.logoPagina {
-    width: 15%;
-    height: 100%;
+.logoPage {
+    width: 12%;
+    height: auto;
     object-fit: cover;
     margin-left: 20px;
     margin-top: 15px;
@@ -38,7 +38,6 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
-    margin-right: 30px;
 }
 
 .animated-button {
@@ -57,6 +56,15 @@ body {
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
+.bi-caret-down {
+    position: absolute;
+    margin-top: 3px;
+}
+
+span {
+    margin-right: 15px;
+}
+
 .animated-button span:last-child {
     position: absolute;
     top: 50%;
@@ -64,7 +72,8 @@ body {
     transform: translate(-50%, -50%);
     width: 20px;
     height: 20px;
-    background-color: #0D28AB;
+    background-color: white;
+    color: black;
     border-radius: 50%;
     border-color: white;
     opacity: 0;
@@ -77,8 +86,8 @@ body {
 }
 
 .animated-button:hover {
-    box-shadow: 0 0 0 5px #0D28AB;
-    color: #ffffff;
+    box-shadow: 0 0 5px 5px rgb(4, 16, 122);
+    color: black;
 }
 
 .animated-button:active {
@@ -94,7 +103,7 @@ body {
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 .inicio_Sesion {
     width: 100%;
-    height: 700px;
+    height: 713.5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,7 +170,7 @@ body {
 .signup_Section {
     background-image: linear-gradient(#0d27ab, #000000);
     width: 40%;
-    height: 90%;
+    height: 95%;
     text-align: center;
     border-radius: 3%;
 }
@@ -172,7 +181,8 @@ h2 {
 }
 
 .inputs {
-    margin-top: 40px;
+    gap: 20px;
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -185,7 +195,7 @@ h2 {
     height: 60px;
     margin-top: 40px;
     font-size: 20px;
-    border-radius: 30px;
+    border-radius: 25px;
     border: none;
     background-color: #D9D9D9;
 }
@@ -198,6 +208,7 @@ h2 {
     margin-top: 70px;
     width: 40%;
     height: 10%;
+    margin-top: 130px;
     font-size: 25px;
     border: transparent;
     padding: 1.3em 3em;
@@ -213,6 +224,7 @@ h2 {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
+    font-size: 18px;
 }
 
 .login_button:hover {
@@ -232,7 +244,7 @@ h2 {
     height: 60px;
     margin-top: 20px;
     font-size: 20px;
-    border-radius: 30px;
+    border-radius: 25px;
     border: none;
     background-color: #D9D9D9;
 }
@@ -256,6 +268,7 @@ h2 {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
+    font-size: 18px;
 }
 
 .signup_button:hover {
@@ -271,4 +284,83 @@ h2 {
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
+.footer {
+    background-image: linear-gradient(to left, #0D28AB, #000000);
+    width: 100%;
+    height: 120px;
+    display: flex;
+}
 
+.copyright {
+    width: 50%;
+    height: 100%;
+}
+
+.paragraph_footer {
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.social_icons {
+    width: 16.8%;
+    height: 100%;
+}
+
+.social_media {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 7px;
+}
+
+.hover_icons {
+    border-radius: 3000px;
+    width: 200px;
+    height: auto;
+}
+
+.bi-twitter-x,
+.bi-facebook,
+.bi-youtube,
+.bi-instagram {
+    width: 100%;    
+    height: 100%;
+    color: white;
+}
+
+.hover_icons:hover {
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.425);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.enlaces {
+    width: 16.6%;
+    height: 100%;
+}
+
+.enlaces a {
+    text-decoration: none;
+    width: 100%;
+    margin-top: 24px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.logoPage_footer {
+    width: 16.6%;
+    height: 100%;
+}
+
+.logoFooter {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
