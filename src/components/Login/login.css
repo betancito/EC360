@@ -133,9 +133,8 @@ span {
 
 .animated-button:hover {
     box-shadow: 0 0 5px 5px rgb(4, 16, 122);
-    color: black;
+    color: white;
 }
-
 .animated-button:active {
     scale: 0.95;
 }
@@ -144,18 +143,19 @@ span {
     width: 150px;
     height: 150px;
     opacity: 1;
+    background-color: #0d28ab;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 .inicio_Sesion {
     width: 100%;
-    height: 713.5px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 140px;
-    background-color: transparent;
     color: white;
+    margin-bottom: 70px;
+    margin-top: 70px;
 }
 
 .container {
@@ -222,6 +222,7 @@ span {
     text-align: center;
     background-size: 1000% 100%;
     border-radius: 3%;
+    padding-bottom: 40px;
 }
 
 h2 {
@@ -418,6 +419,7 @@ h2 {
 /* footer */
 footer{ 
   width: 100%;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -427,7 +429,7 @@ footer{
   display: flex;
   flex-direction: row;
   width: 100%;
-  bottom: 0;
+  height: 100%;
   animation: animated 30s infinite ;
   background-image: linear-gradient(to right, #0d28ab, #415FF1, #B3BFF9, #0D28AB, #415FF1, #B3BFF9);
   background-size: 1000% 100%;
@@ -591,7 +593,6 @@ gap: 10px;
 @media screen and (max-width: 900px) {
 .inicio_Sesion{
     flex-direction: column;
-    position: auto;
 }
 
 .footer-wrap{
@@ -606,5 +607,16 @@ gap: 10px;
   .footer-mid{
     display: none;
   }
+
+.login_Section,
+.signup_Section {
+    animation: animated 30s infinite ;
+    background-image: linear-gradient( 35deg, #0d28ab, #415FF1, #B3BFF9, #0D28AB, #415FF1, #B3BFF9);
+    width: 90%;
+    height: 95%;
+    text-align: center;
+    background-size: 1000% 100%;
+    border-radius: 3%;
+}
 }
 >>>>>>> 3dd595a (updates 27/05/24)
