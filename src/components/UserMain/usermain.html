@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este es mi primer hola mundo">
+    <meta name="keywords" content="finanzas, dinero, plata, ahorro">
+    <meta name="sitedomain" content="https://ec360finance.com">
+    <meta name="organization" content="Riwi">
+    <meta name="author" content="Jeronimo Betancur, Brayan Conde, Fabian, Andres Castrillon">
+    <meta name="designer" content="Jeronimo Betancur, Brayan Conde, Fabian, Andres Castrillon">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="15days">
+    <title>EC360</title>
+    <link rel="stylesheet" href="./usermain.css">
+    <script src="./usermain.js" defer></script>
+</head>
+<body>
+    <header>
+        <!--Navbar-->
+    <nav class="navbar">
+        <div class="wrap">
+            <div class="logoDiv">
+                <a href="#"><img class="logoPagina" src="/src/assets/img/Logo maker project (1).png" alt="LogoPagina"></a>
+            </div>
+            <div class="logout">
+                <a href="../../../index.html"><button class="Btn">
+  
+                    <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
+                    
+                    <div class="text">Logout</div>
+                </button></a>
+            </div>
+        </div>
+        </nav>
+        <!--Navbar-->
+    </header>  
+    <main>
+        <div class="part">
+            <div class="parent">
+                <div class="container div1">
+                    <div>
+                        <div id="porcentaje-gastos"></div>
+                        <div class="porcnum"></div>
+                    </div>
+                    <div >
+                        <div class="valor"></div>
+                    </div>
+                </div>
+                <div class="container div2">
+                    <div>
+                        <div class="porcentaje porcentaje-30"></div>
+                        <div class="porcnum"></div>
+                        <div class="valor1">30%</div>
+                    </div>
+                </div>
+                <div class="container div3">
+                    <div>
+                        <div class="porcentaje porcentaje-50"></div>
+                        <div class="porcnum"></div>
+                    </div>
+                    <div >
+                        <div class="valor2">50%</div>
+                    </div>
+                    
+                </div>
+                <div class="container div4">
+                    <div>
+                        <div class="porcentaje porcentaje-20"></div>
+                        <div class="porcnum"></div>
+                    </div>
+                    <div>
+                        <div class="valor3">20%</div>
+                    </div>
+                </div>
+                <div class="container div5">
+                    <div>
+                        <div class="porcentaje"></div>
+                        <div class="porcnum"></div>
+                    </div>
+                    <div >
+                        <div class="valor4">0%</div>
+                    </div>
+            </div>
+        </div>
+        <section class="actions">
+            <div class="padre">
+                    <div class="ruta-gasto">
+                        <label for="gasto"><h3>Gastos</h3></label>
+                        <input type="number" id="gasto" placeholder="Ingresar Gasto" class="input-gasto" min="0" step="0.01">
+                        <div class="checkbox-group" id="gastos-checkbox-group">
+                            <label><input type="checkbox" value="comida"> Comida</label>
+                            <label><input type="checkbox" value="servicios"> Servicios</label>
+                            <label><input type="checkbox" value="alquiler"> Alquiler</label>
+                            <label><input type="checkbox" value="transporte"> Transporte</label>
+                            <label><input type="checkbox" value="otros"  onclick="NewoptionGastoAppear(appearNewOptionGasto)" >Otros (Agregar nueva)</label>
+                        </div>
+                        <input type="text" id="new-option-gasto" placeholder="Agregar otro gasto" class="hidden">
+                            <button onclick="addNewGastoOption()" class="btn green">Agregar</button>
+                            <button onclick="saveSelectedGastos()" class="btn green">Guardar Gastos</button>
+                            <button onclick="removeGastoOption()" class="btn green">Eliminar Ultimo Gasto</button>
+                            <button  id="BTNlimpiarG" class="btn green">Eliminar todos los gastos</button>
+                    </div>
+                    <div class="ruta-meta">
+                        
+                            <h3>Agregar Meta</h3>
+                            <div class="checkbox-group" id="metas-checkbox-group">
+                                <label><input type="checkbox" value="vacaciones"> Viajes</label>
+                                <label><input type="checkbox" value="educacion"> Educación</label>
+                                <label><input type="checkbox" value="casa"> Casa propia</label>
+                                <label><input type="checkbox" value="otros" onclick="NewoptionGastoAppear(appearNewOptionMeta)"> Otros (Agregar nueva)</label>
+                            </div>    
+                            <input type="text" id="new-option-meta" placeholder="Agregar nueva meta" class="hidden">
+                            <button onclick="addNewMetaOption()" class="btn green">Agregar</button>
+                            <button onclick="saveSelectedMetas()" class="btn green">Guardar Metas</button>
+                            <button onclick="removeMetaOption()" class="btn green">Eliminar Ultima meta</button>
+                            <button id="BTNlimpiarM" class="btn green">Eliminar todas las metas</button>
+                        
+                    </div>
+            
+                    <div class="ruta-ingreso">
+                        <label for="ingresos" class="labelIn"><h3>Cuales son tus ingresos</h3></label>
+                        <input type="number" id="ingresos" name="ingresos" min="0" step="0.01" placeholder="Agregue sus Ingresos"
+                            class="input">
+                        <div class="checkbox-group" id="ingresos-checkbox-group">
+                            <label><input type="checkbox" value="salario"> Salario</label>
+                            <label><input type="checkbox" value="regalo"> Regalo</label>
+                            <label><input type="checkbox" value="mesada"> Mesada</label>
+                            <label><input type="checkbox" value="otros" onclick="NewoptionIngresoAppear(appearNewOptionIngreso)"> Otros (Agregar nueva)</label>
+                        </div>
+                        <input type="text" id="new-option-ingreso" placeholder="Agregar otro ingreso" class="hidden">
+                        <button onclick="addNewIngresoOption()" class="btn green">Agregar</button>
+                        <button onclick="saveSelectedIngresos()" class="btn green">Guardar Ingresos</button>
+                        <button onclick="removeIngresoOption()" class="btn green">Eliminar Ultimo Ingreso</button>
+                        <button id="BTNlimpiarI" class="btn green">Eliminar todos los ingresos</button>
+                    </div>
+
+            </div>
+        </section>
+        <section class="metas-ahorro">
+            <button id="BTNmetas-ahorro">METAS DE AHORRO</button>
+        </section>
+        <section id="recomendaciones" class="hidden">
+            <h2>Resumen y Plan de Ahorro</h2>
+            <div class="contenedor-resumen">
+                <h3>Resumen de Gastos</h3>
+                <div id="resumen-gastos"></div>
+            </div>
+            <div class="contenedor-resumen">
+                <h3>Resumen de Ingresos</h3>
+                <div id="resumen-ingresos"></div>
+            </div>
+            <div class="contenedor-resumen">
+                <h3>Metas de Ahorro</h3>
+                <div id="resumen-metas"></div>
+            </div>
+            <div id="plan-acciones">
+                <h3>Plan de Ahorro</h3>
+            </div>
+            <button id="BTNlimpiar-respuesta" class="btn red">Limpiar Respuesta</button>
+        </section>
+    </main>    
+    <footer>
+        <p>@ EC360</p>
+    </footer>
+    <script src="./usermain.js" defer></script>
+</body>
+</html>

@@ -1,5 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
-
+@keyframes animated {
+    0% {
+      background-position: 0% 0%;
+    }
+    10% {
+      background-position: 10% 0%;
+    }
+    20% {
+      background-position: 20% 0%;
+    }
+    30% {
+      background-position: 30% 0%;
+    }
+    40% {
+      background-position: 40% 0%;
+    }
+    50% {
+      background-position: 50% 0%;
+    }
+    60% {
+      background-position: 60% 0%;
+    }
+    70% {
+      background-position: 70% 0%;
+    }
+    80% {
+      background-position: 80% 0%;
+    }
+    90% {
+      background-position: 90% 0%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
 * {
     padding: 0;
     margin: 0;
@@ -8,20 +42,28 @@
     font-style: normal;
 }
 
-body {
-    background-color: #D9D9D9;
-}
-
 .container {
     width: 100%;
     height: auto;
     background-color: #D9D9D9;
 }
 
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-around;
+    gap: 5px;
+}
+
 .navbar {
     width: 100%;
     height: 120px;
-    background-image: linear-gradient(to right, #0D28AB, #000000);
+    justify-content: center;
+    align-items: center;
+    animation: animated 30s infinite ;
+    background-image: linear-gradient(to right, #0d28ab, #415FF1, #B3BFF9, #0D28AB, #415FF1, #B3BFF9);
+    background-size: 1000% 100%;
     display: flex;
     gap: 1100px;
 }
@@ -62,7 +104,11 @@ body {
 }
 
 span {
+<<<<<<< HEAD
     margin-right: 15px;
+=======
+    color: white;
+>>>>>>> 3dd595a (updates 27/05/24)
 }
 
 .animated-button span:last-child {
@@ -108,6 +154,7 @@ span {
     justify-content: center;
     align-items: center;
     gap: 140px;
+    background-color: transparent;
     color: white;
 }
 
@@ -168,10 +215,12 @@ span {
 
 .login_Section,
 .signup_Section {
-    background-image: linear-gradient(#0d27ab, #000000);
+    animation: animated 30s infinite ;
+    background-image: linear-gradient( 35deg, #0d28ab, #415FF1, #B3BFF9, #0D28AB, #415FF1, #B3BFF9);
     width: 40%;
     height: 95%;
     text-align: center;
+    background-size: 1000% 100%;
     border-radius: 3%;
 }
 
@@ -284,6 +333,7 @@ h2 {
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
+<<<<<<< HEAD
 .footer {
     background-image: linear-gradient(to left, #0D28AB, #000000);
     width: 100%;
@@ -364,3 +414,197 @@ h2 {
     height: 100%;
     object-fit: contain;
 }
+=======
+/* footer */
+footer{ 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-wrap{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  bottom: 0;
+  animation: animated 30s infinite ;
+  background-image: linear-gradient(to right, #0d28ab, #415FF1, #B3BFF9, #0D28AB, #415FF1, #B3BFF9);
+  background-size: 1000% 100%;
+}
+
+/* footer */
+/* footer left styles */
+.footer-left{
+  display: flex;
+  font-size: 30px;
+  width: 33.33%;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  color: #fff;
+}
+/* footer left styles */
+/* Footer-mid styles*/
+.footer-mid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+}
+
+.wrapper-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-footer .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #000;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper-footer .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper-footer .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper-footer .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper-footer .icon:hover span,
+.wrapper-footer .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.footer-mid .facebook:hover,
+.footer-mid .facebook:hover .tooltip,
+.footer-mid .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.footer-mid .twitter:hover,
+.footer-mid .twitter:hover .tooltip,
+.footer-mid .twitter:hover .tooltip::before {
+  filter: invert(1);
+  color: #000;
+}
+
+.footer-mid .instagram:hover,
+.footer-mid .instagram:hover .tooltip,
+.footer-mid .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
+/* footer-mid styles */
+.footer-left{
+  display: flex;
+  width: 33.33%;
+}
+
+
+/* footer.right styles */
+.footer-right input {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 7px;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  transition: 300ms ease-in-out;
+}
+.footer-right input:focus {
+  background-color: white;
+  transform: scale(1.05);
+}
+
+.footer-right{
+display: flex;
+flex-direction: row;
+gap: 10px;
+}
+
+.frl{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 15px;
+}
+
+.frr{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  color: white;
+  font-style: italic;
+  padding: 15px;
+}
+ 
+.frr button:hover{
+  background-color: #e4405f;
+}
+/* footer.right styles */
+@media screen and (max-width: 900px) {
+.inicio_Sesion{
+    flex-direction: column;
+    position: auto;
+}
+
+.footer-wrap{
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    animation: animated 30s infinite ;
+    background-image: linear-gradient(to right, #0d28ab, #415FF1, #B3BFF9, #0D28AB, #415FF1, #B3BFF9);
+    background-size: 1000% 100%;
+}
+
+  .footer-mid{
+    display: none;
+  }
+}
+>>>>>>> 3dd595a (updates 27/05/24)
