@@ -26,7 +26,8 @@ function login() {
         const user = JSON.parse(localStorage.getItem(key));
 
         if ((user.username === usernameOrEmail || user.email === usernameOrEmail) && user.password === password) {
-            alert('Inicio de sesión exitoso');
+            alert(`Inicio de sesión exitoso, Bienvenido ${user.username}!`);
+            window.location.href = 'usermain.html'
             return;
         }
     }
