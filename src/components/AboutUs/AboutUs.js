@@ -1,4 +1,4 @@
-var c = document.getElementById("canv");
+var c = document.getElementById("mainshit");
 var $ = c.getContext("2d");
 
 var col = function (x, y, r, g, b) {
