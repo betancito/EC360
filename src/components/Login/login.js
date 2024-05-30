@@ -12,7 +12,7 @@ function signup() {
 
     // Almacenar el usuario en localStorage
     localStorage.setItem(username, JSON.stringify({ username, email, password }));
-    alert('Registro exitoso');
+    alert('Registro exitoso!');
 }
 
 // Función para autenticar un usuario
@@ -26,7 +26,7 @@ function login() {
         const user = JSON.parse(localStorage.getItem(key));
 
         if ((user.username === usernameOrEmail || user.email === usernameOrEmail) && user.password === password) {
-            alert(`Inicio de sesión exitoso, Bienvenido ${user.username}!`);
+            alert(`Inicio de sesión exitoso!\nBienvenido ${user.username}!`);
             window.location.href = 'usermain.html'
             return;
         }
