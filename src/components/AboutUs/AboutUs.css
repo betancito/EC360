@@ -122,6 +122,7 @@ body{
     display: flex;
     width: 33.33%;
     z-index: 1;
+    
 }
 
 
@@ -140,6 +141,7 @@ body{
     letter-spacing: 0.05em;
     border-radius: 16px;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    
 }
 
 .launch button svg {
@@ -150,6 +152,7 @@ body{
 
 .launch button span {
     transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+    text-decoration: none;
 }
 
 .launch button:hover svg {
