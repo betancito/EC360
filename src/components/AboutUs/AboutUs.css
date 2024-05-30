@@ -10,6 +10,9 @@ body{
     background-size: 40px 40px;
     background-position: 0 0, 20px 20px, 40px 20px;
     background-color: #2196f3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .favicon link{
   filter: invert(1);
@@ -226,7 +229,7 @@ canvas {
 /* canvas styles */
 /* HERO STYLES */
 main{
-    position: absolute;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     gap: 80px;
@@ -333,6 +336,174 @@ main{
     padding: 10px;
 }
 
+.footer{ 
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-wrap{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -10px;
+    animation: animated 30s infinite ;
+    background-image: linear-gradient(to right, #0d28ab, #415FF1, #B3BFF9, #0D28AB, #415FF1, #B3BFF9);
+    background-size: 1000% 100%;
+  }
+  
+  /* footer */
+  /* footer left styles */
+  .footer-left{
+    display: flex;
+    font-size: 30px;
+    width: 33.33%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    color: #fff;
+  }
+  /* footer left styles */
+  /* Footer-mid styles*/
+  .footer-mid{
+    display: flex;
+    width: 33.33%;
+  }
+  .footer-left{
+    display: flex;
+    width: 33.33%;
+  }
+  .wrapper {
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+  }
+  .twitter{
+    padding: 10px;
+  }
+  .wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background: #1877f2;
+    color: #fff;
+  }
+  
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    filter: invert(1);
+    color: #000;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: #e4405f;
+    color: #fff;
+  }
+  /* footer.right styles */
+  .footer-right input {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 7px;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+  }
+  .footer-right input:focus {
+    background-color: white;
+    transform: scale(1.05);
+  }
+  
+  .footer-right{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  }
+  
+  .frl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .frr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    color: white;
+    font-style: italic;
+  }
+   
+  .frr button:hover{
+    background-color: #e4405f;
+  }
+
+
 @media screen and (max-width: 900px) {
     .container {
         display: grid;
@@ -365,6 +536,9 @@ main{
         .us-right{
             width: 90%;
             height: 400px;
+        }
+        .footer-mid{
+            display: none;
         }
 }
 
