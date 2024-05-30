@@ -27,7 +27,7 @@ function login() {
 
         if ((user.username === usernameOrEmail || user.email === usernameOrEmail) && user.password === password) {
             alert(`Inicio de sesión exitoso!\nBienvenido ${user.username}!`);
-            window.location.href = 'usermain.html'
+            // window.location.href = 'usermain.html'
             return;
         }
     }
@@ -41,4 +41,3 @@ document.querySelector('.signup_button').addEventListener('click', signup);
 
 // Manejar el evento de click en el botón de login
 document.querySelector('.login_button').addEventListener('click', login);
-

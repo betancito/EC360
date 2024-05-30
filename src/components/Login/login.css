@@ -104,14 +104,6 @@
     margin-top: 3px;
 }
 
-span {
-<<<<<<< HEAD
-    margin-right: 15px;
-=======
-    color: white;
->>>>>>> 3dd595a (updates 27/05/24)
-}
-
 .animated-button span:last-child {
     position: absolute;
     top: 50%;
@@ -334,89 +326,8 @@ h2 {
     transform: translateY(-1px);
 }
 
-/* ---------------------------------------------------------------------------------------------------------------------------------- */
-<<<<<<< HEAD
-.footer {
-    background-image: linear-gradient(to left, #0D28AB, #000000);
-    width: 100%;
-    height: 120px;
-    display: flex;
-}
 
-.copyright {
-    width: 50%;
-    height: 100%;
-}
 
-.paragraph_footer {
-    font-size: 25px;
-    margin-top: 50px;
-    margin-left: 30px;
-}
-
-.social_icons {
-    width: 16.8%;
-    height: 100%;
-}
-
-.social_media {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    margin-top: 7px;
-}
-
-.hover_icons {
-    border-radius: 3000px;
-    width: 200px;
-    height: auto;
-}
-
-.bi-twitter-x,
-.bi-facebook,
-.bi-youtube,
-.bi-instagram {
-    width: 100%;    
-    height: 100%;
-    color: white;
-}
-
-.hover_icons:hover {
-    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.425);
-    color: #fff;
-    transform: translateY(-7px);
-}
-
-.enlaces {
-    width: 16.6%;
-    height: 100%;
-}
-
-.enlaces a {
-    text-decoration: none;
-    width: 100%;
-    margin-top: 24px;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.logoPage_footer {
-    width: 16.6%;
-    height: 100%;
-}
-
-.logoFooter {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-=======
 /* footer */
 footer{ 
   width: 100%;
@@ -424,6 +335,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 25px;
 }
 
 .footer-wrap{
@@ -620,4 +532,3 @@ gap: 10px;
     border-radius: 3%;
 }
 }
->>>>>>> 3dd595a (updates 27/05/24)
