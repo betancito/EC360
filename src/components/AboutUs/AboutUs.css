@@ -4,7 +4,10 @@
     font-family: "Poetsen One", sans-serif;
     font-weight: 400;
     font-style: normal;
+    padding: 0;
+    margin: 0;
 }
+
 body{
     background: repeating-radial-gradient(circle, transparent, transparent 7.0px, #0d28ab 7.0px, #0d28ab 9.0px), repeating-radial-gradient(circle, transparent, transparent 7.0px, #0d28ab 7.0px, #0d28ab 9.0px), #2196f3;
     background-size: 40px 40px;
