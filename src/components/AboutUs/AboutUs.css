@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+* {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background: repeating-radial-gradient(circle, transparent, transparent 7.0px, #0d28ab 7.0px, #0d28ab 9.0px), repeating-radial-gradient(circle, transparent, transparent 7.0px, #0d28ab 7.0px, #0d28ab 9.0px), #2196f3;
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px, 40px 20px;
+    background-color: #2196f3;
+}
+.favicon link{
+  filter: invert(1);
+}
 .navbar {
     align-items: center;
     justify-content: center;
@@ -55,6 +71,7 @@
 
 .animated-button span:last-child {
     position: absolute;
+    text-decoration: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -68,7 +85,13 @@
 
 .animated-button span:first-child {
     position: relative;
+
     z-index: 1;
+}
+
+.animated-button a{
+    text-decoration: none;
+    color: white
 }
 
 .animated-button:hover {
@@ -143,115 +166,7 @@
 .launch button:active {
     scale: 0.95;
 }
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-#stripes {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    transform-origin: 0;
-    transform: skewY(-12deg);
-    background: -webkit-linear-gradient(300deg, #53f 15%, #05d5ff 70%, #a6ffcb 94%);
-    background: linear-gradient(150deg, #53f 15%, #05d5ff 70%, #a6ffcb 94%);
-
-}
-
-#stripes,
-#stripes span {
-    position: absolute;
-}
-
-#stripes span {
-    height: 40px;
-}
-
-#stripes :nth-child(1) {
-    width: 50%;
-    left: 50%;
-    top: 40px;
-    background: #4c29ff;
-}
-
-#stripes :nth-child(2) {
-    width: 14%;
-    right: 0;
-    bottom: 40px;
-    background: #2be7ff;
-}
-
-#stripes :nth-child(3) {
-    width: 25%;
-    bottom: 0;
-    right: 0;
-    background: #a1ffc8;
-}
-
-@media (min-width:670px) {
-    #stripes span {
-        height: 150px;
-    }
-
-    #stripes :nth-child(1) {
-        top: 0;
-    }
-
-    #stripes :nth-child(2) {
-        width: 16.66667%;
-        top: 300px;
-        bottom: auto;
-        background: #0dcfff;
-    }
-
-    #stripes :nth-child(3) {
-        width: 33.33333%;
-        right: auto;
-        background: #11bdff;
-    }
-}
-
-@media (min-width: 880px) {
-    #stripes span {
-        height: 190px;
-    }
-
-    #stripes :nth-child(1) {
-        width: 33.33333%;
-        left: -16.66666%;
-        background: #53f;
-    }
-
-    #stripes :nth-child(2) {
-        width: 33.33333%;
-        top: 0;
-        left: 16.66666%;
-        right: auto;
-        background: #4553ff;
-    }
-
-    #stripes :nth-child(3) {
-        width: 33.33333%;
-        left: 49.99999%;
-        bottom: auto;
-        background: #4f40ff;
-    }
-
-    #stripes :nth-child(4) {
-        width: 33.33333%;
-        top: 380px;
-        right: -16.66666%;
-        background: #25ddf5;
-    }
-
-    #stripes :nth-child(5) {
-        width: 33.33333%;
-        bottom: 0;
-        background: #1fa2ff;
-    }
-}
+/* Launch button styles */
 /* canvas styles */
 .header{
     position: relative;
@@ -261,12 +176,102 @@ canvas {
     height: 100%;
 }
 
-.canvas-container{
+.canvas-one{
     position: absolute;
     inset: 0;
     z-index: 0;
-    height: 50vh;
+    height: 120px;
     width: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 68%, 0 100%);
+
+    background-image: linear-gradient(to right, #0d28ab, #415FF1, #B3BFF9, #0D28AB, #415FF1, #B3BFF9);
+    background-size: 1000% 100%;
+    animation: animated 30s infinite ;
 }
+
+@keyframes animated {
+    0% {
+      background-position: 0% 0%;
+    }
+    10% {
+      background-position: 10% 0%;
+    }
+    20% {
+      background-position: 20% 0%;
+    }
+    30% {
+      background-position: 30% 0%;
+    }
+    40% {
+      background-position: 40% 0%;
+    }
+    50% {
+      background-position: 50% 0%;
+    }
+    60% {
+      background-position: 60% 0%;
+    }
+    70% {
+      background-position: 70% 0%;
+    }
+    80% {
+      background-position: 80% 0%;
+    }
+    90% {
+      background-position: 90% 0%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
 /* canvas styles */
+/* HERO STYLES */
+main{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    left: 0;
+    top: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+.us{
+    width: 75%;
+    display: flex;
+    z-index: 2;
+    flex-direction: row;
+    filter: invert(0);
+    color: white;
+}
+
+.us-left{
+    width: 50%;
+    font-size: 50px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background: rgba(255,255,255,0.55);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.275);
+    border-radius: 25px;
+}
+
+.us-left p{
+    font-size: 20px;
+}
+
+.us-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.us-right img{
+    width: 50%;
+    background: rgba(179,191,249,0.65);
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+    border: 1px solid rgba(179,191,249,0.325);
+}
+
