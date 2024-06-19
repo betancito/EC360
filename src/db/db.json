@@ -1,0 +1,14 @@
+[
+  {
+    "id": "001",
+    "email": "helloworld@gmail.com",
+    "password": "helloworld",
+    "accountType": "admin"
+  },
+  {
+    "id": "002",
+    "email": "john@beatles.uk",
+    "password": "lennon",
+    "accountType": "user"
+  }
+]
