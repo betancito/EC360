@@ -68,7 +68,7 @@
             <!--end::Menu wrapper-->
             <!--begin::Launth Button-->
             <div class="flex-equal text-end ms-1 launch">
-                <a href="#"><button>
+                <a href="{{route('auth')}}"><button>
                     <svg
                       height="24"
                       width="24"
