@@ -14,7 +14,7 @@
                     <div class="flip-card__front">
                         <div class="title">Log in</div>
                         <form action="login" class="flip-card__form" wire:submit.prevent="login">
-                            <input type="email"  class="flip-card__input" id="email"  name="email" wire:model="email">
+                            <input type="email"  class="flip-card__input" id="email"  name="email" wire:model="email" placeholder="Email">
                             @error('email') <span class="text-danger">{{ $message }}</span> @enderror
                             <input type="password" placeholder="Password" name="password" class="flip-card__input" id="password" wire:model="password">
                             @error('password') <span class="text-danger">{{ $message }}</span> @enderror
@@ -31,15 +31,15 @@
                     <div class="flip-card__back">
                         <div class="title">Sign up</div>
                         <form action="register" class="flip-card__form" wire:submit.prevent="register">
-                            <input type="name"  class="flip-card__input" name="name" id="name"  wire:model="name">
+                            <input type="name"  class="flip-card__input" name="name" id="name"  wire:model="name" placeholder="Name">
                             @error('name') <span class="text-danger">{{ $message }}</span> @enderror
-                            <input type="email"  class="flip-card__input" id="email"  wire:model="email">
+                            <input type="email"  class="flip-card__input" id="email"  wire:model="email" placeholder="Email">
                             @error('email') <span class="text-danger">{{ $message }}</span> @enderror
                             <input type="password" placeholder="Password" name="password" class="flip-card__input" id="password" wire:model="r_password">
                             @error('r_password') <span class="text-danger">{{ $message }}</span> @enderror
-                            <input type="text" class="flip-card__input" id="password_confirmation" wire:model="password_confirmation">
+                            <input type="text" class="flip-card__input" id="password_confirmation" wire:model="password_confirmation" placeholder="Confirm Password">
                             @error('password_confirmation') <span class="text-danger">{{ $message }}</span> @enderror
-                            <button type="submit" class="flip-card__btn">Confirm!</button>
+                            <button type="submit" class="flip-card__btn">Sign Up</button>
                         </form>
                     </div>
                 </div>

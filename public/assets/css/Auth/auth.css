@@ -128,7 +128,7 @@
     justify-content: center;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.089);
     gap: 20px;
     border-radius: 5px;
     border: 2px solid var(--main-color);
@@ -198,7 +198,7 @@
   }
 
 body{
-    background-image: url('https://i.pinimg.com/originals/da/50/09/da500959c4a72da8dd39ce88fc97208c.gif');
+    background-image: url('https://distilledinnovation.co/wp-content/uploads/2022/11/file.gif');
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
