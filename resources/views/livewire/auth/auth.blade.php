@@ -37,7 +37,7 @@
                             @error('email') <span class="text-danger">{{ $message }}</span> @enderror
                             <input type="password" placeholder="Password" name="password" class="flip-card__input" id="password" wire:model="r_password">
                             @error('r_password') <span class="text-danger">{{ $message }}</span> @enderror
-                            <input type="text" class="flip-card__input" id="password_confirmation" wire:model="password_confirmation" placeholder="Confirm Password">
+                            <input type="password" class="flip-card__input" id="password_confirmation" wire:model="password_confirmation" placeholder="Confirm Password">
                             @error('password_confirmation') <span class="text-danger">{{ $message }}</span> @enderror
                             <button type="submit" class="flip-card__btn">Sign Up</button>
                         </form>
