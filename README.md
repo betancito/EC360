@@ -5,3 +5,5 @@ Link Figma: https://www.figma.com/design/iyJeQ0uQxL1RhV13H7sfIX/EC360-PROJECT?no
 Link Asana: https://app.asana.com/0/1207290973987215/1207290937976763
 Link Paleta de colores: https://coolors.co/faf9ff-0c27a6-0d28ab-dee5f6-f7f8f7-6aa9dc
 Link fuentes de letras: https://fonts.google.com/specimen/Poetsen+One
+
+![Codewars](https://github.r2v.ch/codewars?user=BETANCITO&stroke=red)
